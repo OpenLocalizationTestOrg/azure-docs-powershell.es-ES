@@ -9,7 +9,7 @@
       "build_output_subfolder": "azureps",
       "locale": "es-ES",
       "monikers": [],
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -32,6 +32,7 @@
   "notification_subscribers": [],
   "branches_to_filter": [],
   "skip_source_output_uploading": false,
+  "git_repository_branch_open_to_public_contributors": "live",
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
