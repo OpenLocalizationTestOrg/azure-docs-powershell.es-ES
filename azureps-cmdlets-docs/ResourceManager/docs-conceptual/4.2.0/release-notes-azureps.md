@@ -1,6 +1,6 @@
 ---
-title: <span data-ttu-id="52604-101">Registro de cambios de Azure PowerShell | Microsoft Docs</span><span class="sxs-lookup"><span data-stu-id="52604-101">Azure PowerShell Change Log | Microsoft Docs</span></span>
-description: "<span data-ttu-id=\"52604-102\">Es un historial de los cambios realizados en la versión más reciente de Azure PowerShell.</span><span class=\"sxs-lookup\"><span data-stu-id=\"52604-102\">This is a history of changes made to Azure PowerShell in the latest release.</span></span>"
+title: Registro de cambios de Azure PowerShell | Microsoft Docs
+description: "Es un historial de los cambios realizados en la versión más reciente de Azure PowerShell."
 services: azure
 author: sdwheeler
 ms.author: sewhee

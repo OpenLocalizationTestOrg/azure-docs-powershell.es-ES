@@ -17,13 +17,11 @@ ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/29/2017
 ---
-# <span data-ttu-id="1141f-103">Notas de la versión</span><span class="sxs-lookup"><span data-stu-id="1141f-103">Release notes</span></span>
-<a id="release-notes" class="xliff"></a>
+# <a name="release-notes"></a><span data-ttu-id="1141f-103">Notas de la versión</span><span class="sxs-lookup"><span data-stu-id="1141f-103">Release notes</span></span>
 
 <span data-ttu-id="1141f-104">Esta es una lista de los cambios realizados en esta versión de Azure PowerShell.</span><span class="sxs-lookup"><span data-stu-id="1141f-104">This is a list of changes made to Azure PowerShell in this release.</span></span>
 
-## <span data-ttu-id="1141f-105">Versión 3.8.0</span><span class="sxs-lookup"><span data-stu-id="1141f-105">Version 3.8.0</span></span>
-<a id="version-380" class="xliff"></a>
+## <a name="version-380"></a><span data-ttu-id="1141f-105">Versión 3.8.0</span><span class="sxs-lookup"><span data-stu-id="1141f-105">Version 3.8.0</span></span>
 * <span data-ttu-id="1141f-106">Proceso</span><span class="sxs-lookup"><span data-stu-id="1141f-106">Compute</span></span>
   - <span data-ttu-id="1141f-107">Corrección del error de los cmdlets Get-* para permitir la recuperación de varias páginas de datos (más de 120 elementos)</span><span class="sxs-lookup"><span data-stu-id="1141f-107">Fix bug in Get-* cmdlets, to allow retrieving multiple pages of data (more than 120 items)</span></span>
 * <span data-ttu-id="1141f-108">DataLakeAnalytics</span><span class="sxs-lookup"><span data-stu-id="1141f-108">DataLakeAnalytics</span></span>
