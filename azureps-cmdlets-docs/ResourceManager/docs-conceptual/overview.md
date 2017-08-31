@@ -10,11 +10,11 @@ ms.devlang: powershell
 ms.topic: conceptual
 ms.manager: carmonm
 ms.date: 07/26/2017
-ms.openlocfilehash: 3772b68949dc9dba110e6015c8d2a8b944b26528
-ms.sourcegitcommit: 20bcef86db4e4869125bb63085fcffd009c19280
+ms.openlocfilehash: 02bfc15fec83ed4078d9a054b450c5a3cd66b8e2
+ms.sourcegitcommit: db5c50de90764a9bdc7c1f1dbca3aed5bfeb05fa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/22/2017
 ---
 # <a name="overview-of-azure-powershell"></a>Introducción a Azure PowerShell
 
@@ -29,13 +29,14 @@ Los ejemplos siguientes pueden ayudarle a obtener información sobre cómo reali
 * [Web Apps](/azure/app-service-web/app-service-powershell-samples?toc=/powershell/azure/toc.json)
 * [Bases de datos SQL Database](/azure/sql-database/sql-database-powershell-samples?toc=/powershell/azure/toc.json)
 
-
 > [!NOTE] > Si dispone de implementaciones que usan el modelo de implementación clásica que no se pueden convertir, puede instalar la versión de Service Management de Azure PowerShell. Para más información, consulte [Install the Azure PowerShell Service Management module](/powershell/azure/servicemanagement/install-azure-ps) (Instalación del módulo Service Management de Azure PowerShell).
-
 
 ### <a name="need-help-with-powershell"></a>¿Necesita ayuda con PowerShell?
 
-Si no está familiarizado con PowerShell, puede resultarle útil una introducción a este producto. Para empezar a trabajar con PowerShell, consulte [Scripting con PowerShell](https://technet.microsoft.com/library/bb978526.aspx).
+Si no está familiarizado con PowerShell, puede resultarle útil una introducción a este producto.
+
+* [Instalación de PowerShell](/powershell/scripting/installing-windows-powershell)
+* [Scripting con PowerShell](/powershell/scripting/scripting-with-windows-powershell)
 
 También puede ver este vídeo: [PowerShell Basics: (Part 1) Getting Started with PowerShell](https://channel9.msdn.com/Blogs/Taste-of-Premier/PowerShellBasicsPart1) [Conceptos básicos de PowerShell: (parte 1) Introducción a PowerShell].
 
