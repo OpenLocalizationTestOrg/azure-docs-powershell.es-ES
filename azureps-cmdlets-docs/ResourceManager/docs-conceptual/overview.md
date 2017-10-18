@@ -9,18 +9,18 @@ ms.service: azure-powershell
 ms.devlang: powershell
 ms.topic: conceptual
 ms.manager: carmonm
-ms.date: 07/26/2017
-ms.openlocfilehash: 02bfc15fec83ed4078d9a054b450c5a3cd66b8e2
-ms.sourcegitcommit: db5c50de90764a9bdc7c1f1dbca3aed5bfeb05fa
+ms.date: 08/31/2017
+ms.openlocfilehash: ed681a6e920f698caab978ad57fcee9a76420afd
+ms.sourcegitcommit: e6b7e20bbd04eda51416c56b13f867102b602d1a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2017
+ms.lasthandoff: 10/07/2017
 ---
 # <a name="overview-of-azure-powershell"></a>Introducción a Azure PowerShell
 
-Azure PowerShell ofrece un conjunto de cmdlets que usan el modelo [Azure Resource Manager](/azure/azure-resource-manager/resource-group-overview) para administrar los recursos de Azure.
+Azure PowerShell ofrece un conjunto de cmdlets que usan el modelo [Azure Resource Manager](/azure/azure-resource-manager/resource-group-overview) para administrar los recursos de Azure. Se puede usar en el explorador con [Azure Cloud Shell](/azure/cloud-shell/overview), o lo puede instalar en el equipo local y usarlo en cualquier sesión de PowerShell.
 
-Revise el artículo de la [instalación](install-azurerm-ps.md) para que Azure PowerShell esté rápidamente en pleno rendimiento en el sistema. A continuación, lea el artículo de [introducción](get-started-azureps.md) para empezar a usarlo. Para más información sobre la versión más reciente, consulte las [notas de la versión](release-notes-azureps.md).
+Use [Cloud Shell](/azure/cloud-shell/overview) para ejecutar Azure PowerShell en el explorador o [instálelo](install-azurerm-ps.md) en su propio equipo. A continuación, lea el artículo de [introducción](get-started-azureps.md) para empezar a usarlo. Para más información sobre la versión más reciente, consulte las [notas de la versión](release-notes-azureps.md).
 
 Los ejemplos siguientes pueden ayudarle a obtener información sobre cómo realizar escenarios comunes con Azure PowerShell:
 
@@ -29,7 +29,8 @@ Los ejemplos siguientes pueden ayudarle a obtener información sobre cómo reali
 * [Web Apps](/azure/app-service-web/app-service-powershell-samples?toc=/powershell/azure/toc.json)
 * [Bases de datos SQL Database](/azure/sql-database/sql-database-powershell-samples?toc=/powershell/azure/toc.json)
 
-> [!NOTE] > Si dispone de implementaciones que usan el modelo de implementación clásica que no se pueden convertir, puede instalar la versión de Service Management de Azure PowerShell. Para más información, consulte [Install the Azure PowerShell Service Management module](/powershell/azure/servicemanagement/install-azure-ps) (Instalación del módulo Service Management de Azure PowerShell).
+> [!NOTE] &gt; Si dispone de implementaciones que usan el modelo de implementación clásica que no se pueden convertir, puede instalar la versión de Service Management de Azure PowerShell. Para más información, consulte [Install the Azure PowerShell Service Management module](/powershell/azure/servicemanagement/install-azure-ps) (Instalación del módulo Service Management de Azure PowerShell).
+
 
 ### <a name="need-help-with-powershell"></a>¿Necesita ayuda con PowerShell?
 

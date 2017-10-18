@@ -9,22 +9,41 @@ ms.product: azure
 ms.service: azure-powershell
 ms.devlang: powershell
 ms.topic: get-started-article
-ms.date: 03/30/2017
-ms.openlocfilehash: f1c13317f0b42b547166a8130dd8c29bed5759c9
-ms.sourcegitcommit: db5c50de90764a9bdc7c1f1dbca3aed5bfeb05fa
+ms.date: 08/31/2017
+ms.openlocfilehash: 2cd3fc8e955ae826471dceee79d5e6b70070d416
+ms.sourcegitcommit: e6b7e20bbd04eda51416c56b13f867102b602d1a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2017
+ms.lasthandoff: 10/07/2017
 ---
 # <a name="getting-started-with-azure-powershell"></a>Introducción a Azure PowerShell
 
-Azure PowerShell está diseñado para administrar recursos de Azure desde la línea de comandos y para generar scripts de automatización que funcionan con Azure Resource Manager. Este artículo le ayuda a empezar a usarlo y explica los conceptos básicos que hay detrás.
+Azure PowerShell está diseñado para administrar recursos de Azure desde la línea de comandos y para generar scripts de automatización que funcionan con Azure Resource Manager. Se puede usar en el explorador con [Azure Cloud Shell](/azure/cloud-shell/overview), o lo puede instalar en el equipo local y usarlo en cualquier sesión de PowerShell. Este artículo le ayuda a empezar a usarlo y explica los conceptos básicos que hay detrás.
 
-## <a name="install-azure-powershell"></a>Instalar Azure Powershell
+## <a name="connect"></a>Conectar
+
+La manera más sencilla de empezar es [iniciar Cloud Shell](/azure/cloud-shell/quickstart).
+
+1. Inicie Cloud Shell en la navegación superior de Azure Portal.
+
+   ![Icono de Shell](~/media/get-started-azureps/shell-icon.png)
+
+2. Elija la suscripción que desea utilizar y cree una cuenta de almacenamiento.
+
+   ![Crear una cuenta de almacenamiento](~/media/get-started-azureps/storage-prompt.png)
+
+Una vez que se haya creado el almacenamiento, Cloud Shell abrirá una sesión de PowerShell en el explorador.
+
+![Cloud Shell para PowerShell](~/media/get-started-azureps/cloud-powershell.png)
+
+También puede instalar Azure PowerShell y usarlo de forma local en una sesión de PowerShell.
+
+## <a name="install-azure-powershell"></a>Azure PowerShell
 
 El primer paso es asegurarse de que está instalada la versión más reciente de Azure PowerShell. Para más información sobre la versión más reciente, consulte las [notas de la versión](./release-notes-azureps.md).
 
 1. [Instale Azure PowerShell](install-azurerm-ps.md).
+
 2. Para comprobar que la instalación se realizó correctamente, ejecute `Get-Module AzureRM` desde la línea de comandos.
 
 ## <a name="log-in-to-azure"></a>Inicie sesión en Azure.
@@ -51,7 +70,7 @@ Vamos a crear un grupo de recursos denominado "MyResourceGroup" en la región eu
 New-AzureRmResourceGroup -Name 'myResourceGroup' -Location 'westeurope'
 ```
 
-```
+```Output
 ResourceGroupName : myResourceGroup
 Location          : westeurope
 ProvisioningState : Succeeded
@@ -123,7 +142,7 @@ New-AzureRmVM -ResourceGroupName $resourceGroup -Location $location -VM $vmConfi
 
 El comando `New-AzureRmVM` devuelve los resultados una vez que la máquina virtual se haya creado completamente y que esté lista para usarla.
 
-```
+```Output
 RequestId IsSuccessStatusCode StatusCode ReasonPhrase
 --------- ------------------- ---------- ------------
                          True         OK OK
@@ -135,7 +154,7 @@ A continuación, inicie sesión en la máquina virtual con Windows Server recié
 $publicIp | Select-Object Name,IpAddress
 ```
 
-```
+```Output
 Name                  IpAddress
 ----                  ---------
 mypublicdns1400512543 xx.xx.xx.xx
@@ -143,12 +162,11 @@ mypublicdns1400512543 xx.xx.xx.xx
 
 Si se encuentra en un sistema basado en Windows, puede hacerlo desde la línea de comandos mediante el comando mstsc:
 
-```
+```powershell
 mstsc /v:xx.xxx.xx.xxx
 ```
 
 Especifique la misma combinación de nombre de usuario y contraseña que utilizó al crear la máquina virtual para iniciar sesión.
-
 
 ## <a name="create-a-linux-virtual-machine"></a>Creación de una máquina virtual Linux
 
@@ -219,7 +237,7 @@ Una vez creada la máquina virtual, puede iniciar sesión en la nueva máquina v
 ssh xx.xxx.xxx.xxx
 ```
 
-```
+```Output
 Welcome to Ubuntu 14.04.4 LTS (GNU/Linux 3.19.0-65-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com/
@@ -247,7 +265,7 @@ individual files in /usr/share/doc/*/copyright.
 Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
 applicable law.
 
-my-login@MyLinuxVM:~$
+my-login@MyLinuxVM:../../..$
 ```
 
 ## <a name="creating-other-resources-in-azure"></a>Creación de otros recursos en Azure
@@ -291,7 +309,7 @@ Get-AzureRmResource |
     Select-Object Name,Location,ResourceType
 ```
 
-```
+```Output
 Name                                                  Location   ResourceType
 ----                                                  --------   ------------
 myLinuxVM_OsDisk_1_36ca038791f642ba91270879088c249a   westeurope Microsoft.Compute/disks
@@ -320,7 +338,7 @@ Remove-AzureRmVM -Name myWindowsVM -ResourceGroupName myResourceGroup
 
 Se le pedirá que confirme que desea eliminar el recurso.
 
-```
+```Output
 Confirm
 Are you sure you want to remove resource group 'myResourceGroup'
 [Y] Yes  [N] No  [S] Suspend  [?] Help (default is "Y"): Y
@@ -332,7 +350,7 @@ Puede también utilizar la eliminación de muchos recursos al mismo tiempo. Por 
 Remove-AzureRmResourceGroup -Name myResourceGroup
 ```
 
-```
+```Output
 Confirm
 Are you sure you want to remove resource group 'myResourceGroup'
 [Y] Yes  [N] No  [S] Suspend  [?] Help (default is "Y"): Y
@@ -351,5 +369,5 @@ Para más información sobre cómo usar Azure PowerShell, consulte nuestros scri
 * [Creación de entidades de servicio en Azure con Azure PowerShell](create-azure-service-principal-azureps.md)
 * Lea las notas de la versión sobre la migración desde una versión anterior: [https://github.com/Azure/azure-powershell/tree/dev/documentation/release-notes](https://github.com/Azure/azure-powershell/tree/dev/documentation/release-notes).
 * Consiga ayuda de la comunidad:
-  + [Foro de Azure en MSDN](http://go.microsoft.com/fwlink/p/?LinkId=320212)
-  + [stackoverflow](http://go.microsoft.com/fwlink/?LinkId=320213)
+  * [Foro de Azure en MSDN](http://go.microsoft.com/fwlink/p/?LinkId=320212)
+  * [stackoverflow](http://go.microsoft.com/fwlink/?LinkId=320213)
