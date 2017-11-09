@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.workload: 
 ms.date: 07/26/2017
 ms.openlocfilehash: d8a891673df343551cbd805016c2d25ee4e31c8c
-ms.sourcegitcommit: 9d2d35944106bdb6758853b050089bc804e6b9d2
+ms.sourcegitcommit: b256bf48e15ee98865de0fae50e7b81878b03a54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="release-notes"></a>Notas de la versión
 
@@ -190,7 +190,7 @@ Esta es una lista de los cambios realizados en esta versión de Azure PowerShell
     - Se ha agregado el cmdlet Set-AzureRmSqlServerVirtualNetworkRule que permite cambiar la red virtual hacia la que apunta la regla.
     - Se ha agregado el cmdlet Remove-AzureRmSqlServerVirtualNetworkRule que elimina una regla de red virtual de un servidor de Azure SQL.
     - Se ha agregado el cmdlet New-AzureRmSqlServerVirtualNetworkRule que crea una nueva regla de red virtual para un servidor de Azure SQL.
-* Sitios web
+* Websites
   * Se ha agregado el nivel PremiumV2 a los planes de App Service
 * Azure.Storage
   * Actualización a Biblioteca de cliente de Azure Storage 8.4.0 y Biblioteca de Azure Storage DataMovement 0.6.1
@@ -695,7 +695,7 @@ Esta es una lista de los cambios realizados en esta versión de Azure PowerShell
   - Corrección de error de desbordamiento de enteros cuando se usan valores altos de períodos de gracia
   - Ajuste del período de gracia a un mínimo de 1 hora si se proporciona un valor inferior.
   - Eliminación de "Usage_Anomaly" de los valores aceptados para el parámetro "ExcludedDetectionType" del cmdlet Set-AzureRmSqlDatabaseThreatDetectionPolicy y el cmdlet Set-AzureRmSqlServerThreatDetectionPolicy.
-* Almacenamiento
+* Storage
   - Actualización del SDK de SRP a 6.3.0
   - New/Set-AzureRmStorageAccount: incorporación de un parámetro nuevo para admitir EnableHttpsTrafficOnly
   - New/Set/Get-AzureRmStorageAccount: la cuenta de almacenamiento devuelta contiene un nuevo atributo EnableHttpsTrafficOnly

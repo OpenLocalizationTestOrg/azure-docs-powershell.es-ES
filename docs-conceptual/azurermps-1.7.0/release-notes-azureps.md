@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.workload: 
 ms.date: 05/18/2017
 ms.openlocfilehash: 0a3f152751fee569d3ac5fba6bcff8c1737f7b8c
-ms.sourcegitcommit: 226527be7cb647acfe2ea9ab151185053ab3c6db
+ms.sourcegitcommit: b256bf48e15ee98865de0fae50e7b81878b03a54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="release-notes"></a>Notas de la versión
 
@@ -41,18 +41,18 @@ My-CmdletWithConfirmation –Confirm:$false -Force
   - Parámetro -Validate para Move-AzureService, Move-AzureStorageAccount y Move-AzureVirtualNetwork
   - Los parámetros de nombre y versión para los cmdlets de extensión son opcionales, como antes.
   - New-AzureVM puede obtener un tipo de licencia de objeto de máquina virtual.
-* Almacenamiento de Azure
+* Azure Storage
   - Cambio del parámetro Tags a Tag e incorporación del alias de parámetro Tags
     + New-AzureRmStorageAccount
     + Set-AzureRmStorageAccount
 * Red de Azure
   - Incorporación de un nuevo cmdlet para el emparejamiento de redes virtuales
-* Caché en Redis de Azure
+* Azure Redis Cache
   - Incorporación de un nuevo cmdlet para Reset-AzureRmRedisCache
   - Incorporación de un nuevo cmdlet para Export-AzureRmRedisCache
   - Incorporación de un nuevo cmdlet para Import-AzureRmRedisCache
   - Modificación del cmdlet New-AzureRmRedisCache para incluir el cambio de parámetro para la red virtual
-* Copia de seguridad/restauración de la base de datos de Azure SQL
+* Copia de seguridad/restauración de Azure SQL Database
   - Cmdlets para la característica de copia de seguridad LTR (retención a largo plazo)
   - Get-AzureRmSqlServerBackupLongTermRetentionVault
   - Get-AzureRmSqlDatabaseBackupLongTermRetentionPolicy
@@ -104,13 +104,13 @@ My-CmdletWithConfirmation –Confirm:$false -Force
 * Web Apps
   - Incorporación del cmdlet Swap-AzureRmWebAppSlot para el intercambio normal y el intercambio con vista previa
   - Extensión del cmdlet Set-AzureRmWebAppSlot para admitir el intercambio automático
-* Administración de API de Azure
+* Azure API Management
   - Corrección de los cmdlets de implementación de Azure API Management para AzureChinaCloud.
   - Eliminación de la habilitación de manera predeterminada del acceso de Git del cmdlet Set-AzureRmApiManagementTenantGitAccess.
-* Copia de seguridad de Azure Recovery Services
+* Azure Backup Recovery Services
   - Incorporación de compatibilidad con la carga de trabajo de Azure SQL
   - Incorporación de compatibilidad con la copia de seguridad y la restauración de máquinas virtuales de Azure cifradas
   - Backup-AzureRmRecoveryServicesBackupItem: incorporación de la característica de tiempo de retención opcional para los puntos de recuperación
   - Correcciones de errores menores de filtrado en los cmdlets Get-AzureRmRecoveryServicesBackupContainer y Get-AzureRmRecoveryServicesBackupItem
-* Automatización de Azure
+* Azure Automation
   - Incorporación de Get-AzureRmAutomationHybridWorkerGroup
