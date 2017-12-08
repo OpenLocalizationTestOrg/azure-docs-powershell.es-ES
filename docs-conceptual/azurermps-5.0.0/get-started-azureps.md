@@ -1,4 +1,20 @@
--- title: Introducción a Azure PowerShell | Microsoft Docs description: services: azure author: sdwheeler ms.author: sewhee manager: carmonm ms.product: azure ms.service: azure-powershell ms.devlang: powershell ms.topic: get-started-article ms.date: 11/15/2017
+---
+title: "Introducción a Azure PowerShell | Microsoft Docs"
+description: 
+services: azure
+author: sdwheeler
+ms.author: sewhee
+manager: carmonm
+ms.product: azure
+ms.service: azure-powershell
+ms.devlang: powershell
+ms.topic: get-started-article
+ms.date: 08/31/2017
+ms.openlocfilehash: 2cd3fc8e955ae826471dceee79d5e6b70070d416
+ms.sourcegitcommit: e6b7e20bbd04eda51416c56b13f867102b602d1a
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/07/2017
 ---
 # <a name="getting-started-with-azure-powershell"></a>Introducción a Azure PowerShell
 
@@ -10,15 +26,15 @@ La manera más sencilla de empezar es [iniciar Cloud Shell](/azure/cloud-shell/q
 
 1. Inicie Cloud Shell en la navegación superior de Azure Portal.
 
-   ![Icono de Shell](/media/get-started-azureps/shell-icon.png)
+   ![Icono de Shell](~/media/get-started-azureps/shell-icon.png)
 
 2. Elija la suscripción que desea utilizar y cree una cuenta de almacenamiento.
 
-   ![Crear una cuenta de almacenamiento](/media/get-started-azureps/storage-prompt.png)
+   ![Crear una cuenta de almacenamiento](~/media/get-started-azureps/storage-prompt.png)
 
 Una vez que se haya creado el almacenamiento, Cloud Shell abrirá una sesión de PowerShell en el explorador.
 
-![Cloud Shell para PowerShell](/media/get-started-azureps/cloud-powershell.png)
+![Cloud Shell para PowerShell](~/media/get-started-azureps/cloud-powershell.png)
 
 También puede instalar Azure PowerShell y usarlo de forma local en una sesión de PowerShell.
 
@@ -28,7 +44,7 @@ El primer paso es asegurarse de que está instalada la versión más reciente de
 
 1. [Instale Azure PowerShell](install-azurerm-ps.md).
 
-2. Para comprobar que la instalación se realizó correctamente, ejecute `Get-Module AzureRM -ListAvailable` desde la línea de comandos.
+2. Para comprobar que la instalación se realizó correctamente, ejecute `Get-Module AzureRM` desde la línea de comandos.
 
 ## <a name="log-in-to-azure"></a>Inicie sesión en Azure.
 
@@ -262,7 +278,7 @@ Por ejemplo, para crear un equilibrador de carga de red de Azure que luego se pu
 New-AzureRmLoadBalancer -Name MyLoadBalancer -ResourceGroupName myResourceGroup -Location westeurope
 ```
 
-También se puede crear una red virtual privada nueva (que se suele denominar "Virtual Network" en Azure) para nuestra infraestructura con el siguiente comando:
+También se puede crear una red virtual privada nueva (que se suele denominar "Red virtual" en Azure) para nuestra infraestructura con el siguiente comando:
 
 ```powershell
 $subnetConfig = New-AzureRmVirtualNetworkSubnetConfig -Name mySubnet2 -AddressPrefix 10.0.0.0/16
@@ -344,7 +360,7 @@ Este proceso puede tardar varios minutos en completarse.
 
 ## <a name="get-samples"></a>Ejemplos
 
-Para más información sobre cómo usar Azure PowerShell, consulte nuestros scripts más comunes para [máquinas virtuales Linux](/azure/virtual-machines/virtual-machines-linux-powershell-samples?toc=%2fpowershell%2fazure%%2ftoc.json), [máquinas virtuales Windows](/azure/virtual-machines/virtual-machines-windows-powershell-samples?toc=%2fpowershell%2fazure%%2ftoc.json), [Web Apps](/azure/app-service-web/app-service-powershell-samples?toc=%2fpowershell%2fazure%%2ftoc.json) y [SQL Database](/azure/sql-database/sql-database-powershell-samples?toc=%2fpowershell%2fazure%%2ftoc.json).
+Para más información sobre cómo usar Azure PowerShell, consulte nuestros scripts más comunes para [máquinas virtuales Linux](/azure/virtual-machines/virtual-machines-linux-powershell-samples?toc=%2fpowershell%2fazure%%2ftoc.json), [máquinas virtuales Windows](/azure/virtual-machines/virtual-machines-windows-powershell-samples?toc=%2fpowershell%2fazure%%2ftoc.json), [aplicaciones web](/azure/app-service-web/app-service-powershell-samples?toc=%2fpowershell%2fazure%%2ftoc.json) y [bases de datos de SQL Database](/azure/sql-database/sql-database-powershell-samples?toc=%2fpowershell%2fazure%%2ftoc.json).
 
 ## <a name="next-steps"></a>Pasos siguientes
 
