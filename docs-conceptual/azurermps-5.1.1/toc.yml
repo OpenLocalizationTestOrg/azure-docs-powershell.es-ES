@@ -37,6 +37,8 @@
       items:
         - name: Uso de módulos experimentales
           href: using-experimental-modules.md
+        - name: Ejecución de cmdlets en paralelo mediante trabajos de PowerShell
+          href: using-psjobs.md
     - name: Notas de la versión
       href: release-notes-azureps.md
 - name: Scripts de ejemplo
