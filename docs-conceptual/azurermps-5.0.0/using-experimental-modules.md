@@ -10,11 +10,11 @@ ms.service: azure-powershell
 ms.devlang: powershell
 ms.topic: conceptual
 ms.date: 09/05/2017
-ms.openlocfilehash: 7a01957040be7c0498ef4f0e9b8f7297119221a5
-ms.sourcegitcommit: c42c7176276ec4e1cc3360a93e6b15d32083bf9f
+ms.openlocfilehash: c11e4503c07b0a0c4a71021bc511da723098188e
+ms.sourcegitcommit: 42bfd513fe646494d3d9eb0cfc35b049f7e1fbb7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="using-experimental-azure-powershell-modules"></a>Uso de los módulos experimentales de Azure PowerShell
 
@@ -26,12 +26,7 @@ Para facilitar la experimentación, vamos a crear nuevos módulos de Azure Power
 
 Estos módulos se pueden instalar en paralelo con módulos de Azure PowerShell existentes. Los nombres de cmdlet se han abreviado para proporcionar nombres más cortos y evitar conflictos de nombres con los cmdlets no experimentales existentes.
 
-Los módulos experimentales utilizan la convención de nomenclatura siguiente:
-
-- AzureRM.Compute.Experiments
-- AzureRM.Websites.Experiments
-
-Esta convención de nomenclatura es similar a la nomenclatura de los módulos de la versión preliminar: `AzureRM.*.Preview`. Los módulos de la versión preliminar son diferentes a los módulos experimentales. Los módulos de la versión preliminar implementan la nueva funcionalidad de los servicios de Azure que solo está disponible como oferta en esta versión. Los módulos de la versión preliminar reemplazan los módulos de Azure PowerShell existentes y usan el mismo cmdlet y los mismos nombres de parámetro.
+Los módulos experimentales usan la siguiente convención de nomenclatura: `AzureRM.*.Experiments`. Esta convención de nomenclatura es similar a la nomenclatura de los módulos de la versión preliminar: `AzureRM.*.Preview`. Los módulos de la versión preliminar son diferentes a los módulos experimentales. Los módulos de la versión preliminar implementan la nueva funcionalidad de los servicios de Azure que solo está disponible como oferta en esta versión. Los módulos de la versión preliminar reemplazan los módulos de Azure PowerShell existentes y usan el mismo cmdlet y los mismos nombres de parámetro.
 
 ## <a name="how-to-install-an-experimental-module"></a>Instalación de un módulo experimental
 
@@ -42,10 +37,10 @@ Find-Module AzureRM.*.Experiments
 ```
 
 ```Output
-Version    Name                                Repository           Description
--------    ----                                ----------           -----------
-1.0.0      AzureRM.Websites.Experiments        PSGallery            Create and deploy web applications using Azure Ap...
-1.0.25     AzureRM.Compute.Experiments         PSGallery            Azure Compute experiments for VM creation
+Version Name                         Repository Description
+------- ----                         ---------- -----------
+1.0.25  AzureRM.Compute.Experiments  PSGallery  Azure Compute experiments for VM creation
+1.0.0   AzureRM.Websites.Experiments PSGallery  Create and deploy web applications using Azure App Services.
 ```
 
 Para instalar el módulo experimental, use los siguientes comandos desde una sesión de PowerShell con privilegios elevados:
@@ -74,9 +69,9 @@ Las mejoras principales se consideran como de "sentido común" y basta con exper
 
 - Nombres más cortos: incluye los nombres de los cmdlets (por ejemplo, `New-AzureRmVM` => `New-AzVm`) y los nombres de los parámetros (por ejemplo, `-ResourceGroupName` => `-Rg`). Usa alias para una mejor compatibilidad con los cmdlets "anteriores". Proporciona conjuntos de parámetros _compatibles con versiones anteriores_.
 
-- Valores predeterminados inteligentes: crea valores predeterminados inteligentes para rellenar los campos de información "obligatorios". Por ejemplo:
+- Valores predeterminados inteligentes: crea valores predeterminados inteligentes para rellenar los campos de información "obligatorios". Por ejemplo: 
   - Grupo de recursos
-  - Ubicación
+  - La ubicación
   - Recursos dependientes
 
 ### <a name="experimental-improvements"></a>Mejoras experimentales
@@ -101,30 +96,3 @@ Por ejemplo, el escenario de "Creación de aplicación web" podría tener un mod
 - Valores predeterminados de tamaño: los "tamaños" de los recursos pueden ser confusos para los usuarios ya que muchos proveedores de recursos utilizan nombres diferentes (por ejemplo, "Standard\_DS1\_v2" o "S1"). Sin embargo, la mayoría de los usuarios se preocupa más por el costo. Por lo tanto, tiene sentido definir tamaños "universales" basados en una programación de precios. Los usuarios pueden elegir un tamaño específico o dejar que Azure PowerShell elija la _mejor opción_ en función del presupuesto de recursos.
 
 - Formato de salida: actualmente, Azure PowerShell devuelve `PSObject`s y se producen pocas salidas de consola. Puede que Azure PowerShell tenga que mostrar algo de información al usuario sobre los "valores predeterminados inteligentes" usados.
-
-## <a name="try-using-the-experiments"></a>Comprobación de los experimentos
-
-### <a name="install"></a>Instalación
-
-```powershell
-Install-Module AzureRM.Compute.Experiments
-```
-
-### <a name="create-a-vm"></a>Creación de una VM
-
-```powershell
-$job = New-AzVm -Name MyVm -AsJob
-Receive-Job $job
-```
-
-### <a name="send-us-feedback"></a>Envíenos comentarios
-
-```powershell
-Send-Feedback
-```
-
-### <a name="uninstall-the-experimental-modules"></a>Desinstalación de los módulos experimentales
-
-```powershell
-Uninstall-Module AzureRM.Compute.Experiments
-```
