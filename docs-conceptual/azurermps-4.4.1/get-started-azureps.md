@@ -11,10 +11,10 @@ ms.devlang: powershell
 ms.topic: get-started-article
 ms.date: 11/15/2017
 ms.openlocfilehash: cbe8507a89c048351dab64e28552596ed802bf21
-ms.sourcegitcommit: c42c7176276ec4e1cc3360a93e6b15d32083bf9f
+ms.sourcegitcommit: d320fd5a2f468445c9e5aaa8d28dc363ece12ffc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="getting-started-with-azure-powershell"></a>Introducción a Azure PowerShell
 
@@ -38,7 +38,7 @@ Una vez que se haya creado el almacenamiento, Cloud Shell abrirá una sesión de
 
 También puede instalar Azure PowerShell y usarlo de forma local en una sesión de PowerShell.
 
-## <a name="install-azure-powershell"></a>Azure PowerShell
+## <a name="install-azure-powershell"></a>Instalar Azure Powershell
 
 El primer paso es asegurarse de que está instalada la versión más reciente de Azure PowerShell. Para más información sobre la versión más reciente, consulte las [notas de la versión](./release-notes-azureps.md).
 
@@ -362,7 +362,7 @@ Este proceso puede tardar varios minutos en completarse.
 
 Para más información sobre cómo usar Azure PowerShell, consulte nuestros scripts más comunes para [máquinas virtuales Linux](/azure/virtual-machines/virtual-machines-linux-powershell-samples?toc=%2fpowershell%2fazure%%2ftoc.json), [máquinas virtuales Windows](/azure/virtual-machines/virtual-machines-windows-powershell-samples?toc=%2fpowershell%2fazure%%2ftoc.json), [Web Apps](/azure/app-service-web/app-service-powershell-samples?toc=%2fpowershell%2fazure%%2ftoc.json) y [SQL Database](/azure/sql-database/sql-database-powershell-samples?toc=%2fpowershell%2fazure%%2ftoc.json).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>pasos siguientes
 
 * [Inicio de sesión con Azure PowerShell](authenticate-azureps.md)
 * [Administración de suscripciones de Azure con Azure PowerShell](manage-subscriptions-azureps.md)
