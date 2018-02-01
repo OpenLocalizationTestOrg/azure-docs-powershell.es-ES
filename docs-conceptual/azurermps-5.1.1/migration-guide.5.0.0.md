@@ -4,7 +4,7 @@ Este documento sirve no solo como notificación de los cambios sustanciales, sin
 
 ## <a name="table-of-contents"></a>Tabla de contenido
 
-- [Cambios sustanciales en los cmdlets de ApiManagement](#breaking-changes-to-apimanagement-cmdlets)
+- [Cambios sustanciales en cmdlets de ApiManagement](#breaking-changes-to-apimanagement-cmdlets)
 - [Cambios sustanciales en los cmdlets de Batch](#breaking-changes-to-batch-cmdlets)
 - [Cambios substanciales en cmdlets de Compute](#breaking-changes-to-compute-cmdlets)
 - [Cambios substanciales en cmdlets de EventHub](#breaking-changes-to-eventhub-cmdlets)
@@ -623,7 +623,7 @@ Set-AzureRmADUser [other required parameters] -Password $SecureStringVariable
 
 ### <a name="type-namespaceattributes"></a>**Tipo NamespaceAttributes**
 - Se han quitado las siguientes propiedades
-    - Enabled
+    - habilitado
     - Status
    
 ```powershell
@@ -661,7 +661,7 @@ $queue = Get-AzureRmServiceBusQueue <parameters>
    
 ### <a name="type-topicattribute"></a>**Tipo TopicAttribute**
 - Las siguientes propiedades se marcan como obsoletas:
-    - Location
+    - La ubicación
     - IsExpress
     - IsAnonymousAccessible
     - FilteringMessagesBeforePublishing

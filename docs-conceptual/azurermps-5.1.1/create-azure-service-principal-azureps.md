@@ -12,10 +12,10 @@ ms.devlang: powershell
 ms.topic: conceptual
 ms.date: 05/15/2017
 ms.openlocfilehash: 6eda2d2a729331b212938aa2681d0188a25b734a
-ms.sourcegitcommit: c42c7176276ec4e1cc3360a93e6b15d32083bf9f
+ms.sourcegitcommit: 72f56597f0329d35779a3ea4ccea6293f0fd2502
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="create-an-azure-service-principal-with-azure-powershell"></a>Creación de una entidad de servicio de Azure con Azure PowerShell
 
@@ -112,7 +112,7 @@ SubscriptionName      :
 CurrentStorageAccount :
 ```
 
-¡Enhorabuena! Puede usar estas credenciales para ejecutar la aplicación. A continuación, debe ajustar los permisos de la entidad de servicio.
+Felicidades. Puede usar estas credenciales para ejecutar la aplicación. A continuación, debe ajustar los permisos de la entidad de servicio.
 
 ## <a name="managing-roles"></a>Administración de roles
 
