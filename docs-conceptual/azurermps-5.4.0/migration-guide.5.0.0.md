@@ -661,7 +661,7 @@ $queue = Get-AzureRmServiceBusQueue <parameters>
    
 ### <a name="type-topicattribute"></a>**Tipo TopicAttribute**
 - Las siguientes propiedades se marcan como obsoletas:
-    - La ubicación
+    - Ubicación
     - IsExpress
     - IsAnonymousAccessible
     - FilteringMessagesBeforePublishing
@@ -689,7 +689,7 @@ $topic = Get-AzureRmServiceBusTopic <parameters>
     - DeadLetteringOnFilterEvaluationExceptions
     - EntityAvailabilityStatus
     - IsReadOnly
-    - La ubicación
+    - Ubicación
    
 ```powershell
 # Old
