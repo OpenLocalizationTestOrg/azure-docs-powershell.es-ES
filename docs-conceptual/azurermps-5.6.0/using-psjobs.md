@@ -10,11 +10,11 @@ ms.service: azure-powershell
 ms.devlang: powershell
 ms.topic: conceptual
 ms.date: 12/11/2017
-ms.openlocfilehash: 0a445a7db84c8deb6518b826b4096983669c5961
-ms.sourcegitcommit: 15bf69bf95eceb936b3a429e741add95c308826a
+ms.openlocfilehash: dfc1efa752c9c9fa42ad5904adacd83c2dc333b8
+ms.sourcegitcommit: 8376e0bc5f862d382d7283ba72990e3707591e7b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="running-cmdlets-in-parallel-using-powershell-jobs"></a>Ejecución de cmdlets en paralelo mediante trabajos de PowerShell
 
@@ -23,7 +23,7 @@ Azure PowerShell depende en gran medida de la realización. y espera, de llamada
 
 ## <a name="context-persistence-and-psjobs"></a>PSJobs y persistencia de contexto
 
-Los PSJobs se ejecutan en procesos independientes, lo que significa que la información acerca de la conexión de Azure se debe compartir correctamente con los trabajos que se creen. Tras conectar su cuenta de Azure a su sesión de PowerShell con `Login-AzureRmAccount`, puede pasar el contexto a un trabajo.
+Los PSJobs se ejecutan en procesos independientes, lo que significa que la información acerca de la conexión de Azure se debe compartir correctamente con los trabajos que se creen. Tras conectar su cuenta de Azure a su sesión de PowerShell con `Connect-AzureRmAccount`, puede pasar el contexto a un trabajo.
 
 ```powershell
 $creds = Get-Credential

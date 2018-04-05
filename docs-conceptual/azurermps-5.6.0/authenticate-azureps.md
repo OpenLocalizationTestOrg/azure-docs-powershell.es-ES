@@ -10,11 +10,11 @@ ms.service: azure-powershell
 ms.devlang: powershell
 ms.topic: conceptual
 ms.date: 05/15/2017
-ms.openlocfilehash: 1af5aeffb8e87e916df3e2440a84805935136c0f
-ms.sourcegitcommit: 15bf69bf95eceb936b3a429e741add95c308826a
+ms.openlocfilehash: f07dee0eed106e39879d58ae06ff08b787faa531
+ms.sourcegitcommit: 8376e0bc5f862d382d7283ba72990e3707591e7b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="log-in-with-azure-powershell"></a>Inicio de sesión con Azure PowerShell
 
@@ -22,7 +22,7 @@ Azure PowerShell admite varios métodos de inicio de sesión. La manera más sen
 
 ## <a name="interactive-log-in"></a>Inicio de sesión interactivo
 
-1. Escriba `Login-AzureRmAccount`. Aparecerá un cuadro de diálogo que le pide sus credenciales de Azure.
+1. Escriba `Connect-AzureRmAccount`. Aparecerá un cuadro de diálogo que le pide sus credenciales de Azure.
 
 2. Escriba la dirección de correo electrónico y la contraseña asociadas a su cuenta. Azure autentica y guarda las credenciales y, luego, cierra la ventana.
 
@@ -35,7 +35,7 @@ Las entidades de servicio proporcionan una manera de crear cuentas no interactiv
 2. Inicie sesión con la entidad de servicio.
 
     ```powershell
-    Login-AzureRmAccount -ServicePrincipal -ApplicationId  "http://my-app" -Credential $pscredential -TenantId $tenantid
+    Connect-AzureRmAccount -ServicePrincipal -ApplicationId  "http://my-app" -Credential $pscredential -TenantId $tenantid
     ```
 
     Para obtener el valor de TenantId, inicie sesión de forma interactiva y, a continuación, obtenga este valor de su suscripción.
@@ -64,7 +64,7 @@ Para más información acerca de MSI, consulte [How to use an Azure VM Managed S
 Azure Cloud Services proporciona distintos entornos que cumplen con las reglamentaciones sobre el control de datos de las distintas administraciones públicas. Si la cuenta de Azure está en una de las nubes de administración pública, debe especificar el entorno cuando inicie sesión. Por ejemplo, si la cuenta está en la nube de China, inicie sesión con el comando siguiente:
 
 ```powershell
-Login-AzureRmAccount -EnvironmentName AzureChinaCloud
+Connect-AzureRmAccount -Environment AzureChinaCloud
 ```
 
 Use el comando siguiente para obtener una lista de los entornos disponibles:

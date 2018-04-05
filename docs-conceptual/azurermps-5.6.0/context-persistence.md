@@ -10,11 +10,11 @@ ms.service: azure-powershell
 ms.devlang: powershell
 ms.topic: conceptual
 ms.date: 08/31/2017
-ms.openlocfilehash: 8ef20796b64b16c78a653e293a57d5e752d89710
-ms.sourcegitcommit: 15bf69bf95eceb936b3a429e741add95c308826a
+ms.openlocfilehash: 4b2b3b690a8c5d6951b24d49091154c6fb479fe3
+ms.sourcegitcommit: 8376e0bc5f862d382d7283ba72990e3707591e7b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="persisting-user-logins-across-powershell-sessions"></a>Conservación de inicios de sesión de usuario entre sesiones de PowerShell
 
@@ -73,7 +73,7 @@ Si necesita saber el resultado de la tarea en segundo plano, utilice `Get-Job` p
 
 ## <a name="creating-selecting-renaming-and-removing-contexts"></a>Creación, selección, cambio de nombre y eliminación de contextos
 
-Para crear un contexto debe haber iniciado sesión en Azure. El cmdlet `Add-AzureRmAccount` (o su alias, `Login-AzureRmAccount`) permite establecer el contexto predeterminado utilizado por los cmdlets posteriores de Azure PowerShell y le permite acceder a todos los inquilinos o suscripciones permitidas por sus credenciales de inicio de sesión.
+Para crear un contexto debe haber iniciado sesión en Azure. El cmdlet `Connect-AzureRmAccount` (o su alias, `Login-AzureRmAccount`) permite establecer el contexto predeterminado utilizado por los cmdlets posteriores de Azure PowerShell y le permite acceder a todos los inquilinos o suscripciones permitidas por sus credenciales de inicio de sesión.
 
 Para agregar un nuevo contexto después de iniciar sesión, use `Set-AzureRmContext` (o su alias, `Select-AzureRmSubscription`).
 
