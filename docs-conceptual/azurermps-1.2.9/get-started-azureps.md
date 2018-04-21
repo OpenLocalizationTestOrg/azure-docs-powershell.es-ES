@@ -10,11 +10,11 @@ ms.service: azure-powershell
 ms.devlang: powershell
 ms.topic: get-started-article
 ms.date: 11/15/2017
-ms.openlocfilehash: fbd5309167be8cb32aecbfb4661a1789c37d8f2d
-ms.sourcegitcommit: 7a1c08518b180de822c915db99b055b93a1459d7
+ms.openlocfilehash: 5f1bd0c780b027b2b5779c70fa3145c5dfdc3bb4
+ms.sourcegitcommit: 4ebdeea3c472d94c1aedb10b9d85bf2e76826e83
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="getting-started-with-azure-powershell"></a>Introducción a Azure PowerShell
 
@@ -26,19 +26,19 @@ La manera más sencilla de empezar es [iniciar Cloud Shell](/azure/cloud-shell/q
 
 1. Inicie Cloud Shell en la navegación superior de Azure Portal.
 
-   ![Icono de Shell](/media/get-started-azureps/shell-icon.png)
+   ![Icono de Shell](~/media/get-started-azureps/shell-icon.png)
 
 2. Elija la suscripción que desea utilizar y cree una cuenta de almacenamiento.
 
-   ![Crear una cuenta de almacenamiento](/media/get-started-azureps/storage-prompt.png)
+   ![Crear una cuenta de almacenamiento](~/media/get-started-azureps/storage-prompt.png)
 
 Una vez que se haya creado el almacenamiento, Cloud Shell abrirá una sesión de PowerShell en el explorador.
 
-![Cloud Shell para PowerShell](/media/get-started-azureps/cloud-powershell.png)
+![Cloud Shell para PowerShell](~/media/get-started-azureps/cloud-powershell.png)
 
 También puede instalar Azure PowerShell y usarlo de forma local en una sesión de PowerShell.
 
-## <a name="install-azure-powershell"></a>Azure PowerShell
+## <a name="install-azure-powershell"></a>Instalar Azure Powershell
 
 El primer paso es asegurarse de que está instalada la versión más reciente de Azure PowerShell. Para más información sobre la versión más reciente, consulte las [notas de la versión](./release-notes-azureps.md).
 
@@ -46,7 +46,7 @@ El primer paso es asegurarse de que está instalada la versión más reciente de
 
 2. Para comprobar que la instalación se realizó correctamente, ejecute `Get-Module AzureRM -ListAvailable` desde la línea de comandos.
 
-## <a name="log-in-to-azure"></a>Inicie sesión en Azure.
+## <a name="log-in-to-azure"></a>Inicio de sesión en Azure
 
 Inicie sesión de forma interactiva:
 
