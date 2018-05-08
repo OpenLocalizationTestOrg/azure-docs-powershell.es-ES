@@ -3,17 +3,18 @@ title: "Instalación y configuración del módulo Service Management de Azure Po
 description: "Instalación y configuración de Azure PowerShell para usarlo por primera vez"
 services: azure
 author: sdwheeler
+ms.author: sewhee
 manager: carmonm
 ms.product: azure
 ms.service: azure-powershell
 ms.devlang: powershell
 ms.topic: conceptual
 ms.date: 03/06/2017
-ms.openlocfilehash: 164af369d49e3044e5409c28d8b6145ebc067313
-ms.sourcegitcommit: 020066d68d4ab68da162a4ae0cb4e239241f950f
+ms.openlocfilehash: f46fe25352c100976dd8fc3b1c48ddfc3926f906
+ms.sourcegitcommit: 7a1c08518b180de822c915db99b055b93a1459d7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="installing-the-azure-powershell-service-management-module"></a>Instalación del módulo Service Management de Azure PowerShell
 
